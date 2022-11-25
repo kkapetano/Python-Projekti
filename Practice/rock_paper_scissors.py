@@ -35,13 +35,13 @@ while continue_game:
     bot = randint(1, 3)
 
     #input check
-    if int(selection) in range(1, 4):
-        selection = int(selection)
-    elif selection == 'q':
+    if selection == 'q':
         print("--------------------------------------------")
         print(f'Player score: {player}\n....AI score: {ai}.')
         print("Thank you for playing!")
         exit()
+    elif int(selection) in range(1, 4):
+        selection = int(selection)
     else:
         print("The value you inputed was incorrect.")
         print("please try again.\n")
